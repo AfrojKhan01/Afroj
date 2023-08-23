@@ -1,0 +1,508 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (min-width:720px) {
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 100px 0px;
+    }
+        /* Box one */
+    .menu-icon{
+        display: none;
+    }
+    .user-profile{
+        display: none;
+    }
+    .head-logo{
+        display: flex;
+        align-items: center;
+    }
+    .head-logo img{
+        width: 50px;
+        margin-right: 20px;
+    }
+
+        /* Box Two */
+    .head-text{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        color: grey;
+    }
+    .head-text span>a{
+        text-decoration: none;
+        color: grey;
+        font-size: 15px;
+    }
+
+        /* Box Three */
+    .head-button button{
+        padding: 15px;
+        width: 120px;
+        background-color: white;
+        border: 1px solid black;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+        /* Hover Header*/
+    .head-text>span>a:hover{
+        color: orangered;
+        transition: all 0.3s ease-in-out;
+    }
+    .head-button button:hover{
+        background-color: orangered;
+        color: white; 
+        transition: all 0.3s ease-in-out;  
+    }
+
+
+        /* Hero Section */
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 70px 100px 0px;
+    }
+    section>.herosection-left{
+        display: flex;
+        flex-direction: column;
+    }
+    section>.herosection-left>h1{
+        font-size: 60px;
+        line-height: 90px;
+        margin: 0px;
+
+    }
+    section>.herosection-left>p{
+        font-size: 20px;
+        color: rgb(88, 86, 86);
+        margin-top: 0px;
+        border-left: 2px solid gray;
+        width: 400px;
+        margin-top: 20px;
+        padding-left: 10px;
+        line-height: 30px;
+    }
+    .herosection-buttons>button{
+        padding: 15px;
+        width: 150px;
+        margin-top: 15px;
+    }
+    .herosection-buttons>button.button1{
+        background-color: orangered;
+        color: white;
+        border: none;
+        font-weight: bold;
+    }
+    .herosection-buttons>button.button2{
+        background-color: white;
+        border: 1px solid;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .herosection-buttons>img{
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+    .herosection-right{
+        width: 500px;
+        height: 400px;
+    }
+    .herosection-right>div>img{
+        position: absolute;
+    }
+    .img1>img{
+        width: 500px;  
+    }
+    .img2>img{
+          margin-top: 500px;
+    }
+    .herosection-buttons2{
+        display: none;
+    }
+
+        /* Hover Hero Section */
+
+    .herosection-buttons>button.button2:hover{
+        background-color: orangered;
+        color: white;
+        transition: all 0.3s ease-in-out;   
+    }
+    .herosection-buttons>button.button1:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid;  
+        transition: all 0.3s ease-in-out; 
+    }
+
+        /* Footer */
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 200px;
+        padding: 50px 0px;
+        background-color: rgb(20, 20, 58);
+        color: white;
+    }
+    .foot-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 18%;
+    }
+    .foot-one>h1{
+        line-height: 50px;
+    }
+    .foot-one>p{
+        line-height: 25px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+    .foot-two{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 18%;
+    }
+    .foot-two>.img1{
+        background-color: cyan;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .foot-two>.img1>img{
+        width: 25px;
+    }
+    .foot-two>p{
+        line-height: 20px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+
+
+    .foot-three{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 18%;
+    }
+    .foot-three>.img2{
+        background-color: orangered;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .foot-three>.img2>img{
+        width: 20px;
+        margin-bottom: 500px;
+    }
+    .foot-three>p{
+        line-height: 20px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+
+
+    .foot-four{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: start;
+        width: 18%;
+    }
+    .foot-four>.img3{
+        background-color: #2e4ad3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .foot-four>.img3>img{
+        width: 20px;
+    }
+    .foot-four>p{
+        line-height: 20px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media screen and (max-width:720px) {
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px 20px;
+    }
+        /* Box one */
+    .menu-icon>img{
+        width: 50px;
+        cursor: pointer;
+    }    
+    
+        /* Box Two */
+    .head-text{
+        display: none;   
+    }
+    .head-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .head-logo img{
+        width: 35px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+        /* Box Three */
+    .head-button{
+        display: none;
+    }
+    .user-profile>img{
+        width: 30px;
+        cursor: pointer;
+    }
+    
+
+        /* Hero Section */
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin: 50px;
+    }
+    section>.herosection-left{
+        display: flex;
+        flex-direction: column;
+    }
+    section>.herosection-left>h1{
+        font-size: 60px;
+        line-height: 90px;
+        margin: 0px;
+
+    }
+    section>.herosection-left>p{
+        font-size: 20px;
+        color: rgb(88, 86, 86);
+        margin-top: 0px;
+        border-left: 2px solid gray;
+        width: 400px;
+        margin-top: 20px;
+        padding-left: 10px;
+        line-height: 30px;
+    }
+    .herosection-buttons>button{
+        display: none;
+    }
+    .herosection-buttons2{
+        display: flex;
+        width: 100%;
+    }
+    .herosection-buttons2>button{
+        padding: 20px;
+        width: 200px;
+        margin-top: 60px;
+    }
+    .herosection-buttons2>button.button1{
+        background-color: orangered;
+        color: white;
+        border: none;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    .herosection-buttons2>button.button2{
+        background-color: white;
+        border: 1px solid;
+        font-weight: bold;
+    }
+    .herosection-buttons>img{
+        display: none;
+    }
+    .herosection-buttons2>img{
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 250px;
+        width: 100px;
+    }
+    .herosection-right{
+        width: 400px;
+        height: 400px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .herosection-right>div>img{
+        position: absolute;
+    }
+    .img1>img{
+        width: 400px;  
+    }
+    .img2>img{
+          margin-top: 400px;
+    }
+
+        /* Hover Hero Section */
+
+    .herosection-buttons>button.button2:hover{
+        background-color: orangered;
+        color: white;   
+        transition: all 0.3s ease-in-out;
+    }
+    .herosection-buttons>button.button1:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid; 
+        transition: all 0.3s ease-in-out;  
+    }
+
+        /* Footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        padding: 50px 0px;
+        background-color: rgb(20, 20, 58);
+        color: white;
+    }
+    .foot-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+    }
+    .foot-one>h1{
+        line-height: 50px;
+    }
+    .foot-one>p{
+        line-height: 25px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+
+
+    .foot-two{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .foot-two>.img1{
+        background-color: cyan;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .foot-two>.img1>img{
+        width: 25px;
+    }
+    .foot-two>h3{
+        font-size: 25px;
+    }
+    .foot-two>p{
+        line-height: 20px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+
+
+    .foot-three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .foot-three>.img2{
+        background-color: orangered;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .foot-three>.img2>img{
+        width: 20px;
+        margin-bottom: 400px;
+    }
+    .foot-three>h3{
+        font-size: 25px;
+    }
+    .foot-three>p{
+        line-height: 20px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+
+
+    .foot-four{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .foot-four>.img3{
+        background-color: #2e4ad3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .foot-four>.img3>img{
+        width: 20px;
+    }
+    .foot-four>h3{
+        font-size: 25px;
+    }
+    .foot-four>p{
+        line-height: 20px;
+        color: #b9b2b2;
+        margin-top: 0px;
+    }
+}
